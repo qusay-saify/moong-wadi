@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moong Wadi - Sun-dried moong dal dumplings made fresh in Ujjain">
+  <title>Moong Wadi – Ujjain's Finest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="dots">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- TOP NAVIGATION BAR -->
+  <nav id="topbar">
+    <a href="#" class="logo" onclick="goStep(1);return false">
+      <span class="logo-icon">🌿</span> Moong Wadi
+    </a>
+    <div class="nav-links">
+      <a href="#" onclick="goStep(1);return false" id="nav-home">Home</a>
+      <a href="#" onclick="goStep(2);return false" id="nav-order">Orders</a>
+      <a href="#" onclick="openContact();return false">Contact Us</a>
+      <a href="#" class="nav-cta btn" onclick="goStep(2);return false">Order Now →</a>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       STEP 1: LANDING / ABOUT
+       ========================================== -->
+  <div class="step active" id="step1">
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="grain"></div>
+      
+      <div class="hero-tag">🏡 Homemade · Ujjain · Since Generations</div>
+      <h1 class="hero-title">Moong<em>Wadi</em></h1>
+      <p class="hero-sub">Sun-dried moong dal dumplings made fresh in Ujjain — wholesome, protein-rich, and bursting with authentic Indian spices.</p>
+      
+      <div class="hero-actions">
+        <button class="btn btn-fill" onclick="goStep(2)">Order Fresh Wadi →</button>
+        <a href="#about-anchor" class="btn btn-outline">Learn More ↓</a>
+      </div>
+      
+      <div class="hero-specs">
+        <div class="spec">
+          <div class="spec-val">100%</div>
+          <div class="spec-lbl">Natural</div>
+        </div>
+        <div class="spec">
+          <div class="spec-val">0</div>
+          <div class="spec-lbl">Preservatives</div>
+        </div>
+        <div class="spec">
+          <div class="spec-val">2–3</div>
+          <div class="spec-lbl">Days Ready</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOW IT'S MADE TIMELINE -->
+    <div class="about-section" id="about-anchor">
+      <div class="about-inner">
+        <div class="section-eyebrow">How It's Made</div>
+        <h2 class="section-head">From Dal to <em>Delight</em></h2>
+        
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-left">
+              <div class="tl-icon">💧</div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-content">
+              <h3>Soaking the Moong Dal</h3>
+              <p>Whole moong or split moong dal is washed thoroughly and soaked overnight in fresh water to soften and activate the nutrients.</p>
+              <span class="tl-time">⏱ 8–12 hours</span>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-left">
+              <div class="tl-icon">🫙</div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-content">
+              <h3>Grinding the Batter</h3>
+              <p>The soaked dal is coarsely ground — not too fine, not too rough — to get a thick, textured batter that binds well and dries evenly.</p>
+              <span class="tl-time">⏱ 20–30 minutes</span>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-left">
+              <div class="tl-icon">🌶</div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-content">
+              <h3>Mixing in the Spices</h3>
+              <p>Just three pure ingredients — fresh green chilli, garlic, and salt — are mixed into the batter. Masala Wadi gets more of these same spices for a bolder, punchier flavour.</p>
+              <span class="tl-time">⏱ 15 minutes</span>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-left">
+              <div class="tl-icon">☀️</div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-content">
+              <h3>Sun Drying</h3>
+              <p>Small dumplings are dropped onto cotton cloth and left under the open sun for 2–3 days. The heat naturally dries and firms them, giving that perfect chewy texture when cooked.</p>
+              <span class="tl-time">⏱ 2–3 days</span>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-left">
+              <div class="tl-icon">📦</div>
+            </div>
+            <div class="tl-content">
+              <h3>Pack &amp; Dispatch</h3>
+              <p>Fully dried wadi is packed in airtight bags. Local Ujjain orders are delivered fresh. Pan-India orders are couriered with secure packaging.</p>
+              <span class="tl-time">⏱ Ready to ship</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INGREDIENTS SECTION -->
+    <div class="ing-section">
+      <div class="ing-inner">
+        <div class="section-eyebrow">What Goes In</div>
+        <h2 class="section-head">Pure <em>Ingredients</em></h2>
+        <div class="ing-grid">
+          <div class="ing-card">
+            <div class="ing-emoji">🟡</div>
+            <div class="ing-name">Moong Dal</div>
+            <div class="ing-role">The base — pure &amp; wholesome</div>
+            <span class="ing-tag tag-base">Base</span>
+          </div>
+          <div class="ing-card">
+            <div class="ing-emoji">🌶</div>
+            <div class="ing-name">Green Chilli</div>
+            <div class="ing-role">Fresh heat &amp; spice</div>
+            <span class="ing-tag tag-base">Base</span>
+          </div>
+          <div class="ing-card">
+            <div class="ing-emoji">🧄</div>
+            <div class="ing-name">Garlic</div>
+            <div class="ing-role">Deep flavour &amp; aroma</div>
+            <span class="ing-tag tag-base">Base</span>
+          </div>
+          <div class="ing-card">
+            <div class="ing-emoji">🧂</div>
+            <div class="ing-name">Salt</div>
+            <div class="ing-role">Just for taste</div>
+            <span class="ing-tag tag-base">Base</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <button class="btn btn-fill btn-lg" onclick="goStep(2)">Choose Your Wadi →</button>
+    </div>
+
+  </div><!-- /step1 -->
+
+  <!-- ==========================================
+       STEP 2: CHOOSE WADI TYPE
+       ========================================== -->
+  <div class="step" id="step2">
+    <div class="choose-wrap">
+      <div class="section-eyebrow">Step 1 of 2</div>
+      <h2 class="section-head">Choose Your <em>Wadi</em></h2>
+      <p class="step-desc">Tap a variety to select it, then choose your quantity below.</p>
+
+      <div class="type-grid">
+        <!-- CLASSIC WADI -->
+        <div class="type-card" id="card-classic" onclick="selectType('classic')">
+          <div class="check-ring">✓</div>
+          <div class="card-hero-img">
+            🟡
+            <div class="card-ribbon">Classic</div>
+          </div>
+          <div class="type-body">
+            <div class="type-name">Normal Wadi</div>
+            <div class="type-desc">Our original recipe — simple, pure, and wholesome. Made with just green chilli, garlic, and salt. The clean, natural flavour of moong dal shines through in every bite.</div>
+            <div class="type-spices">
+              <span class="stag stag-base">🌶 Green Chilli</span>
+              <span class="stag stag-base">🧄 Garlic</span>
+              <span class="stag stag-base">🧂 Salt</span>
+            </div>
+            <div class="type-price">
+              <span class="price-sym">₹</span>
+              <span class="price-num">360</span>
+              <span class="price-unit-s">/ kg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MASALA WADI -->
+        <div class="type-card" id="card-masala" onclick="selectType('masala')">
+          <div class="check-ring">✓</div>
+          <div class="card-hero-img">
+            🟠
+            <div class="card-ribbon spicy">🔥 Masala</div>
+          </div>
+          <div class="type-body">
+            <div class="type-name">Masala Wadi</div>
+            <div class="type-desc">Same pure recipe — green chilli, garlic, and salt — but with a generous, bold hand. More chilli for heat, more garlic for depth. Ideal for those who love a strong, punchy flavour.</div>
+            <div class="type-spices">
+              <span class="stag stag-base">🌶 Green Chilli</span>
+              <span class="stag stag-extra">🌶🌶 Extra Chilli</span>
+              <span class="stag stag-base">🧄 Garlic</span>
+              <span class="stag stag-extra">🧄🧄 Extra Garlic</span>
+              <span class="stag stag-base">🧂 Salt</span>
+            </div>
+            <div class="type-price">
+              <span class="price-sym">₹</span>
+              <span class="price-num">400</span>
+              <span class="price-unit-s">/ kg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUANTITY SELECTOR -->
+      <div class="qty-section">
+        <h3>How Much Would You Like?</h3>
+        <div class="qty-row">
+          <div>
+            <div class="qty-label">Quantity (in kg)</div>
+            <div class="qty-note">Min: 0.5 kg · Steps of 0.5 kg</div>
+          </div>
+          <div class="qty-ctrl">
+            <button class="qbtn" onclick="changeQ(-0.5)">−</button>
+            <div class="qdisplay" id="qdisplay">1</div>
+            <span class="qty-unit">kg</span>
+            <button class="qbtn" onclick="changeQ(0.5)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2 SUMMARY -->
+      <div class="step2-summary">
+        <div>
+          <div class="s-label">Selected</div>
+          <div class="s-selected" id="sel-label">— Please select a type above —</div>
+        </div>
+        <div class="s-right">
+          <div class="s-label">Subtotal</div>
+          <div class="s-val" id="sel-price">₹0</div>
+        </div>
+      </div>
+
+      <!-- NAVIGATION BUTTONS -->
+      <div class="nav-bottom nav-bottom-dark">
+        <button class="btn btn-outline" onclick="goStep(1)">← Back</button>
+        <button class="btn btn-fill" id="toPayBtn" onclick="goToPayment()" disabled>Proceed to Payment →</button>
+      </div>
+    </div>
+  </div><!-- /step2 -->
+
+  <!-- ==========================================
+       STEP 3: PAYMENT & DETAILS
+       ========================================== -->
+  <div class="step" id="step3">
+    <div class="pay-wrap">
+      <div class="section-eyebrow">Step 2 of 2</div>
+      <h2 class="section-head">Payment & <em>Details</em></h2>
+
+      <!-- LOCATION SELECTION -->
+      <div class="location-box">
+        <h3>📍 Your Location</h3>
+        <p>Are you in <strong>Ujjain</strong> or ordering from outside? Local orders are hand-delivered. Orders from outside Ujjain are couriered — courier charges are to be paid separately, but we charge ₹30 for packaging.</p>
+        <div class="loc-options">
+          <div class="loc-btn" id="loc-ujjain" onclick="setLocation('ujjain')">
+            <div class="loc-icon">🏙️</div>
+            <div>Within Ujjain</div>
+            <div class="loc-subtext">No packaging charge</div>
+          </div>
+          <div class="loc-btn" id="loc-outside" onclick="setLocation('outside')">
+            <div class="loc-icon">🚚</div>
+            <div>Outside Ujjain</div>
+            <div class="loc-subtext">+₹30 packaging · Courier at actuals</div>
+          </div>
+        </div>
+        <div class="courier-note" id="courier-note">
+          📦 <strong>Courier Info:</strong> Your order will be securely packed (+₹30 packaging). Courier charges will be calculated at the time of dispatch and shared with you via WhatsApp.
+        </div>
+      </div>
+
+      <!-- ORDER SUMMARY -->
+      <div class="pay-summary" id="pay-summary">
+        <h3>Order Summary</h3>
+        <div class="pay-row">
+          <span class="pl" id="ps-type">—</span>
+          <span class="pv" id="ps-subtotal">₹0</span>
+        </div>
+        <div class="pay-row" id="ps-pkg-row" style="display:none">
+          <span class="pl">Packaging charge</span>
+          <span class="pv">₹30</span>
+        </div>
+        <div class="pay-total">
+          <span class="pl">Total to Pay Now</span>
+          <span class="pv" id="ps-total">₹0</span>
+        </div>
+      </div>
+
+      <!-- CUSTOMER DETAILS FORM -->
+      <div class="cust-form">
+        <h3>Your Details</h3>
+        <div class="form-grid">
+          <div class="fld">
+            <label>Full Name</label>
+            <input type="text" id="cname" placeholder="e.g. Priya Sharma">
+          </div>
+          <div class="fld">
+            <label>WhatsApp / Phone</label>
+            <input type="tel" id="cphone" placeholder="e.g. 98765 43210">
+          </div>
+          <div class="fld full">
+            <label>Delivery Address</label>
+            <textarea id="caddress" placeholder="House no., Street, Area, City, Pincode…"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAYMENT METHODS -->
+      <div class="pay-methods">
+        <h3>Payment Method</h3>
+        <p class="sub">💳 Online payment only — we ship all over India. No Cash on Delivery.</p>
+        <div class="method-opts">
+          <div class="mopt" id="mopt-upi" onclick="setMethod('upi')">
+            <div class="mopt-icon">📱</div>
+            <div class="mopt-name">UPI</div>
+            <div class="mopt-desc">PhonePe / GPay / Paytm</div>
+          </div>
+          <div class="mopt" id="mopt-bank" onclick="setMethod('bank')">
+            <div class="mopt-icon">🏦</div>
+            <div class="mopt-name">Bank Transfer</div>
+            <div class="mopt-desc">NEFT / IMPS / RTGS</div>
+          </div>
+          <div class="mopt" id="mopt-qr" onclick="setMethod('qr')">
+            <div class="mopt-icon">🔲</div>
+            <div class="mopt-name">Scan QR</div>
+            <div class="mopt-desc">Scan &amp; Pay</div>
+          </div>
+        </div>
+
+        <!-- UPI DETAILS -->
+        <div class="upi-detail" id="upi-detail">
+          <div class="detail-label">Send payment to UPI ID:</div>
+          <div class="upi-id">moongwadi@upi</div>
+          <div class="upi-note">After payment, share the screenshot on WhatsApp. We will confirm your order once payment is verified.</div>
+        </div>
+
+        <!-- BANK TRANSFER DETAILS -->
+        <div class="bank-detail" id="bank-detail">
+          <div class="bank-row">
+            <span class="bk">Account Name</span>
+            <span class="bv">Moong Wadi Ujjain</span>
+          </div>
+          <div class="bank-row">
+            <span class="bk">Account No.</span>
+            <span class="bv">1234 5678 9012</span>
+          </div>
+          <div class="bank-row">
+            <span class="bk">IFSC Code</span>
+            <span class="bv">SBIN0012345</span>
+          </div>
+          <div class="bank-row">
+            <span class="bk">Bank</span>
+            <span class="bv">State Bank of India</span>
+          </div>
+          <div class="bank-note">Please share payment confirmation on WhatsApp after transfer.</div>
+        </div>
+
+        <!-- QR CODE DETAILS -->
+        <div class="upi-detail" id="qr-detail">
+          <div class="detail-label">Scan this QR code to pay:</div>
+          <div class="qr-placeholder">🔲</div>
+          <div class="upi-note">After scanning and paying, please send us a screenshot on WhatsApp for confirmation.</div>
+        </div>
+      </div>
+
+      <!-- DELIVERY TIME NOTICE -->
+      <div class="delivery-notice">
+        <div class="notice-icon">☀️</div>
+        <div>
+          <div class="notice-title">Delivery Time Notice</div>
+          <div class="notice-text">
+            Your wadi is made <strong>fresh after your order</strong> and needs to be <strong>sun-dried naturally</strong> — this takes time and fully depends on the weather. Please expect delivery in <strong>3–4 days minimum</strong>. During cloudy or rainy days, it may take a little longer. We appreciate your patience! 🙏
+          </div>
+        </div>
+      </div>
+
+      <!-- CONFIRM BUTTON -->
+      <button class="confirm-btn" id="confirmBtn" onclick="confirmOrder()">✅ Confirm My Order</button>
+
+      <!-- BACK BUTTON -->
+      <div class="nav-bottom">
+        <button class="btn" style="background:transparent;color:var(--brown);border:1.5px solid #e8d8c8;border-radius:50px" onclick="goStep(2)">← Back to Wadi Selection</button>
+      </div>
+    </div>
+  </div><!-- /step3 -->
+
+  <!-- ==========================================
+       STEP 4: SUCCESS
+       ========================================== -->
+  <div class="step" id="step4">
+    <div class="success-card">
+      <div class="success-icon">🎉</div>
+      <h2>Order Confirmed!</h2>
+      <p>Thank you for ordering from <strong style="color:var(--turmeric)">Moong Wadi, Ujjain</strong>.</p>
+      <p id="successDetail"></p>
+      <p class="success-desc">We'll contact you on WhatsApp to confirm payment and share delivery details. Your fresh wadi will be sun-dried and ready in <strong style="color:var(--turmeric)">3–4 days</strong>, depending on the weather.</p>
+      <div class="success-back">
+        <button class="btn btn-fill" onclick="goStep(1);resetOrder()">← Order Again</button>
+      </div>
+    </div>
+  </div><!-- /step4 -->
+
+  <!-- STEP INDICATOR (PROGRESS BAR) -->
+  <div class="step-indicator" id="stepIndicator">
+    <div class="si-step" id="si1">
+      <div class="si-num">1</div><span>About</span>
+    </div>
+    <div class="si-sep" id="sep1"></div>
+    <div class="si-step" id="si2">
+      <div class="si-num">2</div><span>Choose Wadi</span>
+    </div>
+    <div class="si-sep" id="sep2"></div>
+    <div class="si-step" id="si3">
+      <div class="si-num">3</div><span>Payment</span>
+    </div>
+  </div>
+
+  <!-- CONTACT MODAL -->
+  <div id="contact-modal">
+    <div class="modal-box">
+      <h2>Contact Us</h2>
+      <div class="contact-row">
+        <div class="cicon">📞</div>
+        <div class="ctext">
+          <div class="cl">Phone / WhatsApp</div>
+          <div class="cv">+91 98765 43210</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="cicon">📧</div>
+        <div class="ctext">
+          <div class="cl">Email</div>
+          <div class="cv">moongwadi.ujjain@gmail.com</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="cicon">📍</div>
+        <div class="ctext">
+          <div class="cl">Location</div>
+          <div class="cv">Ujjain, Madhya Pradesh – 456001</div>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="cicon">🕐</div>
+        <div class="ctext">
+          <div class="cl">Order Timing</div>
+          <div class="cv">Mon–Sat · 9 AM – 7 PM</div>
+        </div>
+      </div>
+      <button class="modal-close" onclick="closeContact()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
